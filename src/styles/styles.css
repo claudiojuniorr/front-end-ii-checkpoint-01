@@ -143,6 +143,7 @@ body .game-card .card-all {
   flex-wrap: wrap;
   width: 100%;
   gap: 10px;
+  padding-top: 30px;
 }
 body .game-card .card-all p {
   color: rgb(217, 237, 237);
