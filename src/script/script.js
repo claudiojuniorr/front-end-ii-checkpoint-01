@@ -43,8 +43,10 @@ function btnCreate(event){
         </main>
     </div>
     `
-    const child = document.querySelector('.card-all p')
-    containerCardElement.removeChild(child)
+    const child = containerCardElement.querySelector('small')
+    if (child != null){
+        containerCardElement.removeChild(child)
+    }
 }
 
 cardTitulodRef.addEventListener('keyup', (event) => cardTitulo(event.target.value))
