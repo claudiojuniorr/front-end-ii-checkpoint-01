@@ -145,7 +145,7 @@ body .game-card .card-all {
   gap: 10px;
   padding-top: 30px;
 }
-body .game-card .card-all p {
+body .game-card .card-all small {
   color: rgb(217, 237, 237);
 }
 body .game-card .card-all .card {

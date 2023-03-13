@@ -16,15 +16,15 @@
             <h1 class="titulo">Cadastrar Jogo</h1>
             <div>
                 <label for="titulo">Título:</label>
-                <input type="text" id="cardTitulo" placeholder="Título do Jogo" maxlength="30">
+                <input type="text" id="cardTitulo" placeholder="Título do Jogo" maxlength="30" required>
             </div>
             <div>
                 <label for="img">URL da imagem:</label>
-                <input type="url" id="carImg" placeholder="URL da Imagem">
+                <input type="url" id="carImg" placeholder="URL da Imagem" required>
             </div>
             <div class="area">
                 <label for="texto">Sobre o jogo:</label>
-                <textarea id="cardText" rows="10" cols="30" placeholder="Sobre o Jogo"></textarea>
+                <textarea id="cardText" rows="10" cols="30" placeholder="Sobre o Jogo" required></textarea>
             </div>
             <button id="buttonCreate" type="submit">Cadastrar</button>
         </form>
@@ -32,7 +32,7 @@
     <section class="game-card">
         <h2 class="title-game">Jogos Cadastrados:</h2>
         <div class="card-all">
-            <p>Nenhum jogo foi cadastrado no momento</p>
+            <small>Nenhum jogo foi cadastrado no momento</small>
         </div>
     </section>
     <footer>
