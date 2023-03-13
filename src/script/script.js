@@ -43,7 +43,7 @@ function btnCreate(event){
         </main>
     </div>
     `
-    let child = document.querySelector('.card-all p')
+    const child = document.querySelector('.card-all p')
     containerCardElement.removeChild(child)
 }
 
