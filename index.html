@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Front End II - Checkpoint 1</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Front End II - Checkpoint 1</h1>
+    </header>
+    <section class="form">
+        <form>
+            <h1 class="titulo">Cadastrar Jogo</h1>
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="cardTitulo" placeholder="Título do Jogo" maxlength="30">
+            </div>
+            <div>
+                <label for="img">URL da imagem:</label>
+                <input type="url" id="carImg" placeholder="URL da Imagem">
+            </div>
+            <div class="area">
+                <label for="texto">Sobre o jogo:</label>
+                <textarea id="cardText" rows="10" cols="30" placeholder="Sobre o Jogo"></textarea>
+            </div>
+            <button id="buttonCreate" type="submit">Cadastrar</button>
+        </form>
+    </section>
+    <section class="game-card">
+        <h2 class="title-game">Jogos Cadastrados:</h2>
+        <div class="card-all">
+            <p>Nenhum jogo foi cadastrado no momento</p>
+        </div>
+    </section>
+    <footer>
+        <h1>Equipe 3:</h1>
+        <div>
+            <p>Claúdio Ribeiro Junior</p>
+        </div>
+        <div>
+            <p>Luan Augusto</p>
+        </div>
+        <div>
+            <p>Vanessa Margareth</p>
+        </div>
+    </footer>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
