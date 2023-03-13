@@ -3,7 +3,7 @@ const cardImgRef = document.querySelector('#carImg')
 const cardTextdRef = document.querySelector('#cardText')
 cardTextdRef.value =''
 const cardButtonRef = document.querySelector('#buttonCreate')
-var containerCardElement = document.querySelector('.card-all')
+const containerCardElement = document.querySelector('.card-all')
 
 const card = {
     titulo: '',
