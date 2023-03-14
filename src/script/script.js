@@ -72,10 +72,13 @@ function validityInput(inputRef){
     }
     validityFormError[inputRef.id] = !inputValid
     checkForm()
+    
 }
 
-cardTitulodRef.addEventListener('keyup', () => validityInput(cardTitulodRef), (event) => cardTitulo(event.target.value))
-cardImgRef.addEventListener('keyup', () => validityInput(cardImgRef), (event) => cardImg(event.target.value))
-cardTextdRef.addEventListener('keyup', () => validityInput(cardTextdRef), (event) => cardText(event.target.value))
-
+cardTitulodRef.addEventListener('keyup', (event) => cardTitulo(event.target.value))
+cardTitulodRef.addEventListener('keyup', () => validityInput(cardTitulodRef))
+cardImgRef.addEventListener('keyup', (event) => cardImg(event.target.value))
+cardImgRef.addEventListener('keyup', () => validityInput(cardImgRef))
+cardTextdRef.addEventListener('keyup', (event) => cardText(event.target.value))
+cardTextdRef.addEventListener('keyup', () => validityInput(cardTextdRef))
 cardButtonRef.addEventListener('click', (event) => btnCreate(event))
