@@ -16,17 +16,17 @@
             <h1 class="titulo">Cadastrar Jogo</h1>
             <div>
                 <label for="titulo">Título:</label>
-                <input type="text" id="cardTitulo" placeholder="Título do Jogo" maxlength="30" required>
+                <input type="text" id="cardTitulo" maxlength="30" minlength="4" required>
             </div>
             <div>
                 <label for="img">URL da imagem:</label>
-                <input type="url" id="carImg" placeholder="URL da Imagem" required>
+                <input type="url" id="carImg" minlength="10" required>
             </div>
             <div class="area">
                 <label for="texto">Sobre o jogo:</label>
-                <textarea id="cardText" rows="10" cols="30" placeholder="Sobre o Jogo" required></textarea>
+                <textarea id="cardText" rows="10" cols="30" minlength="10" required></textarea>
             </div>
-            <button id="buttonCreate" type="submit">Cadastrar</button>
+            <button id="buttonCreate" type="submit" disabled>Cadastrar</button>
         </form>
     </section>
     <section class="game-card">

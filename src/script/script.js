@@ -5,13 +5,19 @@ cardTextdRef.value =''
 const cardButtonRef = document.querySelector('#buttonCreate')
 const containerCardElement = document.querySelector('.card-all')
 
-const card = {
+var card = {
     titulo: '',
     url: '',
     texto: ''
 }
 
-const cards = []
+var validityFormError = {
+    cardTitulo: true,
+    carImg: true,
+    cardText: true
+}
+
+var cards = []
 var lengthCards = cards.length
 
 function cardTitulo(titulo){
@@ -49,7 +55,26 @@ function btnCreate(event){
     }
 }
 
-cardTitulodRef.addEventListener('keyup', (event) => cardTitulo(event.target.value))
-cardImgRef.addEventListener('keyup', (event) => cardImg(event.target.value))
-cardTextdRef.addEventListener('keyup', (event) => cardText(event.target.value))
+function checkForm(){
+    const validityFormArray = Object.values(validityFormError)
+    const formValidity = validityFormArray.every(item => item === false)
+    cardButtonRef.disabled = !formValidity
+}
+
+function validityInput(inputRef){
+    const inputValid = inputRef.checkValidity()
+    const elementFatherRef = inputRef.parentElement 
+    if(inputValid){
+        elementFatherRef.classList.remove('error')
+    }else {
+        elementFatherRef.classList.add('error')
+    }
+    validityFormError[inputRef.id] = !inputValid
+    checkForm()
+}
+
+cardTitulodRef.addEventListener('keyup', () => validityInput(cardTitulodRef), (event) => cardTitulo(event.target.value))
+cardImgRef.addEventListener('keyup', () => validityInput(cardImgRef), (event) => cardImg(event.target.value))
+cardTextdRef.addEventListener('keyup', () => validityInput(cardTextdRef), (event) => cardText(event.target.value))
+
 cardButtonRef.addEventListener('click', (event) => btnCreate(event))

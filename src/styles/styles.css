@@ -77,12 +77,6 @@ body .form form div input {
   background-color: rgb(31, 31, 31);
   color: aliceblue;
 }
-body .form form div input::-moz-placeholder {
-  background-color: rgb(31, 31, 31);
-}
-body .form form div input::placeholder {
-  background-color: rgb(31, 31, 31);
-}
 body .form form .area {
   display: flex;
   justify-content: center;
@@ -127,6 +121,17 @@ body .form form button {
 body .form form button:hover {
   transition: 0.5s;
   background-color: rgb(0, 0, 0);
+}
+body .form form .error label {
+  color: red;
+}
+body .form form .error input {
+  background-color: rgb(106, 28, 28);
+  border: 1px solid red;
+}
+body .form form .error textarea {
+  background-color: rgb(106, 28, 28);
+  border: 1px solid red;
 }
 body .game-card {
   width: 100%;

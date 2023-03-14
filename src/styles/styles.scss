@@ -69,9 +69,6 @@ body {
                     background-color: rgb(31, 31, 31);
                     color: aliceblue;
                 }
-                input::placeholder{
-                    background-color: rgb(31, 31, 31);
-                }
             }
             .area {
                 display: flex;
@@ -117,6 +114,19 @@ body {
             button:hover{
                 transition: 0.5s;
                 background-color: rgb(0, 0, 0);
+            }
+            .error { 
+                label{
+                    color: red;
+                }
+                input{
+                    background-color: rgb(106, 28, 28);
+                    border: 1px solid red;
+                }
+                textarea{
+                    background-color: rgb(106, 28, 28);
+                    border: 1px solid red;
+                }
             }
         }
     }
