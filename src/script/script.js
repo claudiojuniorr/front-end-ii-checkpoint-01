@@ -53,6 +53,7 @@ function btnCreate(event){
     if (child != null){
         containerCardElement.removeChild(child)
     }
+    cardButtonRef.disabled = true
 }
 
 function checkForm(){
