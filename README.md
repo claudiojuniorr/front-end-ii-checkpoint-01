@@ -6,7 +6,7 @@ Site para cadastro de cards, com formulários e validação, totalmente responsi
 
 ## Aprendizados
 
-Aprendemos a criar um formulário, criando cards e adicionando na página.
+Aprendemos a criar um formulário, criando cards atráves do formulário e adicionando na página.
 
 ## Autores
 
